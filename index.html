@@ -15,13 +15,16 @@
     <meta property="twitter:title" content="デヒ公式サイト">
 </head>
     <body>
+        <header>        
         <h1>
             dehi公式サイト!
         </h1>
         <p>
-            このサイトは、デヒがいわゆる<br>
-            <h2>"暇"</h2><br>になりすぎて作ってしまったサイトである。
+            こんにちは！<br>
+            私はデヒと申します。<br>
+            このサイトは私の公式サイトです。
         </p>
+        </header>
         <h3>
             好きなもの<br>
         </h3>
@@ -37,6 +40,25 @@
             浮気する人<br>
             タイピング<br>
         </p>
+        <form action="exampple.php" method="post" name="contact-form">
+            <input type="text" placeholder="name">
+            <input type="radio" name="gender" value="男"> 男
+            <input type="radio" name="gender" value="女"> 女
+            <input type="radio" name="gender" value="その他"> その他
+            サイト満足度:<br>
+            <input type="checkbox" name="reputation" value="満足している"　id="manzoku">
+            <label for="manzoku">満足している</label>
+            <input type="checkbox" name="reputation" value="どちらかといえば満足している" id="dotiman">
+            <label for="dotiman">どちらかといえば満足している</label><br>
+            <input type="checkbox" name="reputation" value="どちらかといえば不満である" id="dotihuma">
+            <label for="dotihuma">どちらかといえば不満である</label>
+            <input type="checkbox" name="reputation" value="不満である" id="human">
+            <label for="human">不満である</label>
+            <textarea name="comments" placeholder="ご意見、ご感想"></textarea>
+            <input type="submit" value="送る">
+
+
+        </form>
 
 </body>
 </html>
