@@ -1,4 +1,7 @@
 @charset "UTF-8";
-body {
+body{
 	background-color: #f0f8ff;
+}
+body header h1 {
+	font-family: 'Oswald', sans-serif;
 }
