@@ -1,8 +1,15 @@
-$mail=new PHPmailer(true);
-$mail->isSMTP();
-$mail->Host='smtp.gmail.com';
-$mail->SMTPAuth=true;
-$mail->Username='camiyata.com@gmail.com';
-$mail->Password='catman.1';
-$mail->SMTPSecure='tls';
-$mail->Port=587;
+<?php
+mb_language("Japanese");
+mb_internal_encoding("UTF-8");
+
+$to = "camiyata.com@gmail.com"; // 自分のメールアドレス
+$subject = "フォームからの問い合わせ";
+$body = "名前: " . $_POST['name'] . "\n" . "内容: " . $_POST['comments'];
+$headers = "From: webmaster@example.com";
+
+if (mb_send_mail($to, $subject, $body, $headers)) {
+    echo "メールを送信しました。";
+} else {
+    echo "送信に失敗しました。";
+}
+?>
