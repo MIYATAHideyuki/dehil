@@ -5,7 +5,7 @@ mb_internal_encoding("UTF-8");
 $to = "camiyata.com@gmail.com"; // 自分のメールアドレス
 $subject = "フォームからの問い合わせ";
 $body = "名前: " . $_POST['name'] . "\n" . "内容: " . $_POST['comments'];
-$headers = "From: webmaster@example.com";
+$headers = "From: camiyata.com@gmail.com";
 
 if (mb_send_mail($to, $subject, $body, $headers)) {
     echo "メールを送信しました。";
